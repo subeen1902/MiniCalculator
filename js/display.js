@@ -18,11 +18,6 @@ export function updateDisplay() {
   }
 }
 
-export function appendToExpression(value) {
-  expression += value;
-  updateDisplay();
-}
-
 export function deleteLast() {
   expression = expression.slice(0, -1);
   updateDisplay();
