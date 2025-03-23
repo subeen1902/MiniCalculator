@@ -7,15 +7,20 @@ export function initDisplay(el) {
   updateDisplay();
 }
 
+export function updateDisplay() {
+  if (displayElement) {
+    displayElement.innerText = expression || '0';
+  }
+}
+
 export function clearCalculator() {
   expression = '';
   updateDisplay();
 }
 
-export function updateDisplay() {
-  if (displayElement) {
-    displayElement.innerText = expression || '0';
-  }
+export function appendToExpression(value) {
+  expression += value;
+  updateDisplay();
 }
 
 export function deleteLast() {
@@ -27,7 +32,7 @@ export function getExpression() {
   return expression;
 }
 
-export function setExpression(value) {
-  expression = value;
+export function setExpression(newValue) {
+  expression = newValue;
   updateDisplay();
 }
