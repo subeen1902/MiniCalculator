@@ -38,6 +38,8 @@ body {
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4열 그리드 정렬 */
+  grid-template-rows: repeat(5, 60px);
+  gap: 1px;
   justify-content: center;
 }
 button {
