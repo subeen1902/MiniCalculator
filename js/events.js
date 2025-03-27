@@ -34,6 +34,7 @@ function handleInput(value) {
   }
 }
 
+// 결과 출력 이벤트
 function evaluateExpression() {
   let expression = getExpression().trim();
   console.log('Evaluating:', expression);
@@ -44,7 +45,7 @@ function evaluateExpression() {
   }
 
   try {
-    const result = eval(expression); // 보안 주의 필요
+    const result = eval(expression);
     setExpression(result.toString());
   } catch (e) {
     console.error('에러 발생:', e);

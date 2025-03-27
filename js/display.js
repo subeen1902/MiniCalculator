@@ -1,4 +1,4 @@
-// 수식과 결과 출력을 위한 전역 변수
+// 수식 및 결과 출력, 상태 관리
 let expression = '';
 let displayElement = null;
 
