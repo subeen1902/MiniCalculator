@@ -7,5 +7,3 @@ const props = defineProps({
 <template>
   <div class="equation">{{ props.expression || '0' }}</div>
 </template>
-
-<style scoped></style>
