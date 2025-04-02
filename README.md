@@ -14,7 +14,7 @@
 
 ## MiniCalculator - 사칙연산 계산기
 
-- HTML, CSS, JavaScript로 사칙연산이 가능한 계산기를 만들어 보았습니다.
+- 기존에 HTML, JavaScript, CSS로 구현했던 계산기를 Vue.js로 구현해보았습니다.
 
 ### 유의사항
 
